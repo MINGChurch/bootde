@@ -11,6 +11,6 @@ public class LoginController {
     @RequestMapping(value = "/test")
     @ResponseBody
     public String test(){
-        return "李健是个勺!";
+        return "ehlloworld!";
     }
 }

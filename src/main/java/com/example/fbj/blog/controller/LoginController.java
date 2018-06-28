@@ -8,9 +8,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class LoginController {
 
-    @RequestMapping(value = "/test")
-    @ResponseBody
+    @RequestMapping(value = "/hello")
     public String test(){
-        return "ehlloworld!";
+        return "index";
     }
 }

@@ -9,8 +9,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-@RequestMapping("/admin")
 public class LoginController {
+
+    @RequestMapping(value = "/")
+    public String index(){
+        return "admin/index/login";
+    }
 
     @RequestMapping(value = "/login",method = RequestMethod.POST)
     //@ResponseBody返回json等格式，不是html页面，所以不用
@@ -19,6 +23,11 @@ public class LoginController {
                         Model model){
         System.out.println("用户："+username+"密码是："+password);
         model.addAttribute("username", username);
-        return "index";
+        return "admin/index/index";
+    }
+
+    @RequestMapping(value = "/welcome")
+    public String menu(){
+        return "admin/index/welcome";
     }
 }

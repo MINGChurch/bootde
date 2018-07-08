@@ -11,12 +11,12 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class LoginController {
 
-    @RequestMapping(value = "/")
+    @RequestMapping(value = "/login")
     public String index(){
         return "admin/index/login";
     }
 
-    @RequestMapping(value = "/login",method = RequestMethod.POST)
+    @RequestMapping(value = "/index",method = RequestMethod.POST)
     //@ResponseBody返回json等格式，不是html页面，所以不用
     public String login(@RequestParam(name = "username",required = true) String username,
                         @RequestParam(name = "password",required = true) String password,

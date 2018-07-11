@@ -4,5 +4,6 @@
 * mybatis-generator（代码生成）
 * detools（热部署,jar已引入)
 * lombok（get/set方法）
+=============
 ### springboot + druid + thymeleaf + shiro + layui + mybatis
 ### http://localhost:9001/login

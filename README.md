@@ -7,3 +7,4 @@
 ### springboot + druid + thymeleaf + shiro + layui + mybatis
 ### http://localhost:9001/login
 ###	强烈建议预先学习git教程(廖雪峰)--[史上最浅显易懂的Git教程](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
+### 修改boots文件加速访问gitHub网站的速度

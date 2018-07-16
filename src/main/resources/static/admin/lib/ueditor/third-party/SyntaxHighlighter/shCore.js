@@ -2389,7 +2389,7 @@ typeof(exports) != 'undefined' ? exports.SyntaxHighlighter = SyntaxHighlighter :
     {
         // Created by Peter Atoria @ http://iAtoria.com
 
-        var inits 	 =  'class interface function package';
+        var inits 	 =  'class interface function Entity';
 
         var keywords =	'-Infinity ...rest Array as AS3 Boolean break case catch const continue Date decodeURI ' +
                 'decodeURIComponent default delete do dynamic each else encodeURI encodeURIComponent escape ' +
@@ -2926,7 +2926,7 @@ typeof(exports) != 'undefined' ? exports.SyntaxHighlighter = SyntaxHighlighter :
 		// http://jroller.com/aalmiray/entry/nice_source_code_syntax_highlighter
 
 		var keywords =	'as assert break case catch class continue def default do else extends finally ' +
-						'if in implements import instanceof interface new package property return switch ' +
+						'if in implements import instanceof interface new Entity property return switch ' +
 						'throw throws try while public protected private static';
 		var types    =  'void boolean byte char short int long float double';
 		var constants = 'null';
@@ -2977,7 +2977,7 @@ typeof(exports) != 'undefined' ? exports.SyntaxHighlighter = SyntaxHighlighter :
 						'continue default do double else enum extends ' +
 						'false final finally float for goto if implements import ' +
 						'instanceof int interface long native new null ' +
-						'package private protected public return ' +
+						'Entity private protected public return ' +
 						'short static strictfp super switch synchronized this throw throws true ' +
 						'transient try void volatile while';
 
@@ -3023,7 +3023,7 @@ typeof(exports) != 'undefined' ? exports.SyntaxHighlighter = SyntaxHighlighter :
 		var keywords = 'abstract after and as assert at before bind bound break catch class '
 						+ 'continue def delete else exclusive extends false finally first for from '
 						+ 'function if import in indexof init insert instanceof into inverse last '
-						+ 'lazy mixin mod nativearray new not null on or override package postinit '
+						+ 'lazy mixin mod nativearray new not null on or override Entity postinit '
 						+ 'protected public public-init public-read replace return reverse sizeof '
 						+ 'step super then this throw true try tween typeof var where while with '
 						+ 'attribute let private readonly static trigger'
@@ -3119,7 +3119,7 @@ typeof(exports) != 'undefined' ? exports.SyntaxHighlighter = SyntaxHighlighter :
     
 		var keywords =  
 			'bless caller continue dbmclose dbmopen die do dump else elsif eval exit ' +
-			'for foreach goto if import last local my next no our package redo ref ' + 
+			'for foreach goto if import last local my next no our Entity redo ref ' +
 			'require return sub tie tied unless untie until use wantarray while ' +
 			// feature
 			'given when default ' +
@@ -3143,7 +3143,7 @@ typeof(exports) != 'undefined' ? exports.SyntaxHighlighter = SyntaxHighlighter :
 
 			{ regex: SyntaxHighlighter.regexLib.doubleQuotedString,	css: 'string' },
 			{ regex: SyntaxHighlighter.regexLib.singleQuotedString,	css: 'string' },
-			// currently ignoring single quote package separator and utf8 names
+			// currently ignoring single quote Entity separator and utf8 names
 			{ regex: /(?:&amp;|[$@%*]|\$#)[a-zA-Z_](\w+|::)*/g,   		css: 'variable' },
 			{ regex: /\b__(?:END|DATA)__\b[\s\S]*$/g,				css: 'comments' },
 			{ regex: /(^|\n)=\w[\s\S]*?(\n=cut\s*\n|$)/g,				css: 'comments' },		// pod
@@ -3486,7 +3486,7 @@ typeof(exports) != 'undefined' ? exports.SyntaxHighlighter = SyntaxHighlighter :
 	
 		var keywords =	'val sealed case def true trait implicit forSome import match object null finally super ' +
 						'override try lazy for var catch throw type extends class while with new final yield abstract ' +
-						'else do if return protected private this package false';
+						'else do if return protected private this Entity false';
 
 		var keyops =	'[_:=><%#@]+';
 

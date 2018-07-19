@@ -1,27 +1,23 @@
-package com.example.fbj.blog.Entity;
+package com.example.fbj.blog.entity;
 
 import java.util.Date;
-/**
- * @Author :fubijie
- * @Description :
- * @Date : 19:08 2018/7/16
-**/
+
 public class User {
-    private Integer uid;   //id
+    private Integer uid;
 
-    private String username;    //用户名
+    private String username;
 
-    private String password;    //密码（加密后）
+    private String password;
 
-    private String email;   //邮箱
+    private String email;
 
-    private String salt;    //盐值
+    private String salt;
 
-    private String role;    //角色
+    private String role;
 
-    private Date createTime;    //创建时间
+    private Date createTime;
 
-    private Date updateTime;    //更新时间
+    private Date updateTime;
 
     public Integer getUid() {
         return uid;
@@ -85,19 +81,5 @@ public class User {
 
     public void setUpdateTime(Date updateTime) {
         this.updateTime = updateTime;
-    }
-
-    @Override
-    public String toString() {
-        return "User{" +
-                "uid=" + uid +
-                ", username='" + username + '\'' +
-                ", password='" + password + '\'' +
-                ", email='" + email + '\'' +
-                ", salt='" + salt + '\'' +
-                ", role='" + role + '\'' +
-                ", createTime=" + createTime +
-                ", updateTime=" + updateTime +
-                '}';
     }
 }

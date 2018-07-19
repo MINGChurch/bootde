@@ -9,7 +9,6 @@ spring:
       prefix: classpath:/templates/
   resources:
     static-locations: classpath:/static/
-
 #=================================================
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
@@ -34,4 +33,5 @@ spring:
 # ================================================
 mybatis:
   mapper-locations: classpath:mapping/*.xml
-  type-aliases-package: com.example.fbj.blog.Entity
+  type-aliases-package: com.example.fbj.blog.entity
+

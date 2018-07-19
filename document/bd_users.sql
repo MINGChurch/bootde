@@ -31,6 +31,6 @@ CREATE TABLE `bd_users`  (
   `create_time` timestamp(0) DEFAULT NULL COMMENT '创建时间',
   `update_time` timestamp(0) DEFAULT NULL COMMENT '更新时间',
   PRIMARY KEY (`uid`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 6 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 SET FOREIGN_KEY_CHECKS = 1;
